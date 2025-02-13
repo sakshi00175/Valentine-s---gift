@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मेरी चिट्ठी - आयुष के नाम</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Background Music -->
+        <audio id="bg-music" loop>
+            <source src="aaja_piya.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Play Button -->
+        <div class="play-button" onclick="playMusic()">
+            <img src="gramophone.png" alt="Play Music">
+        </div>
+
+        <!-- Love Letters Section -->
+        <div class="letters">
+            <div class="letter-page active" id="letter1">
+                <p class="typewriter">मेरे प्रिय आयुष, <br><br> दूरी कभी-कभी इतनी निर्दयी लगती है... <br><br> तुम्हारी, अक्षू</p>
+                <button onclick="nextLetter(1)">अगला पन्ना</button>
+            </div>
+
+            <div class="letter-page" id="letter2">
+                <p class="typewriter">मेरे जीवनसाथी आयुष, <br><br> प्यार की सबसे सुंदर बात यह है... <br><br> सदैव तुम्हारी, अक्षू</p>
+                <button onclick="nextLetter(2)">अगला पन्ना</button>
+            </div>
+
+            <div class="letter-page" id="letter3">
+                <p class="typewriter">मेरे प्रियतम आयुष, <br><br> क्या तुमने कभी सोचा है, जब हम पहली बार मिलेंगे... <br><br> तुम्हारी, सिर्फ तुम्हारी, अक्षू</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

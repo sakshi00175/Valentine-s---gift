@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    background: url('paper-texture.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Play Button */
+.play-button img {
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Letters */
+.letters {
+    display: none;
+    background: rgba(255, 248, 220, 0.9);
+    padding: 20px;
+    border: 2px solid #a67c52;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Typewriter Effect */
+.typewriter {
+    font-size: 1.2em;
+    white-space: pre-line;
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+/* Page Flip Effect */
+.letter-page {
+    display: none;
+    transition: transform 0.8s ease-in-out;
+}
+
+.letter-page.active {
+    display: block;
+}
